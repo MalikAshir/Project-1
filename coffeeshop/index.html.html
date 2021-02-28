@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="new.css">
+    <script src=jquery.js></script>
+    <script>
+$(document).ready(function(){
+    $("#btn").click(function(){
+
+
+
+
+    var tea=parseInt($("#tea").val());
+    var coffee=parseInt($("#coffee").val());
+    var qty1=parseInt($("#qty1").val());
+    var qty2=parseInt($("#qty2").val());
+    
+
+    var a=tea*qty1;
+    var b=coffee*qty2;
+    var c=qty1+qty2;
+    var d=a+b;
+    $("#one").text(a);
+    $("#two").text(b);
+    $("#q").text(c);
+    $("#stotal").text(d);
+    
+    });
+});
+    </script>
+</head>
+<body>
+ 
+    <center>
+        <h1 id="title">ASHIR'CAFE</h1>
+    <input type="text" id="tea" placeholder="Tea" required>
+    <input type="text" id="qty1" placeholder="QTY"><br>
+    <input type="text" id="coffee" placeholder="Coffee">
+    <input type="text" id="qty2" placeholder="QTY"><br><br>
+ 
+  <button id="btn">Total</button><br><br><br>
+ 
+   <h2>TOTAL AMOUNT</h2>    <h1 id="one"></h1>
+    <h1 id="two"></h1>
+   <h2>SUBTOTAL AMOUNT</h2> 
+    <h1 id="stotal"></h1>
+  <h2> TOTAL QUANTITY</h2> 
+    <h1 id="q"></h1>
+</center>
+</body>
+</html>
